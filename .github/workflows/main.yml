@@ -10,7 +10,7 @@ jobs:
           channel: 'stable'
       - name: Install Dependencies
         run: flutter pub get
-      - name: Build APK with High Memory
+      - name: Build APK
         run: |
           export JAVA_OPTS="-Xmx4G"
           flutter build apk --debug --no-tree-shake-icons
